@@ -1,0 +1,104 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --VeryDarkcyan: hsl(179, 100%, 13%);
+
+    --Paragraphs: hsla(0, 0%, 100%, 0.75);
+    --backgroundHeadsButs: hsl(0, 0%, 95%);
+
+    --lexeca:"lexica", sans-serif;
+    --Shoulders:"Big Shoulders zdisplay", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--backgroundHeadsButs);
+    font-size: 15px;
+}
+
+.card-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--backgroundHeadsButs);
+}
+
+.one{
+    background-color: var(--Brightorange);
+    color: var(--Brightorange);
+}
+
+.two{
+    background-color: var(--Darkcyan);
+    color: var(--Darkcyan);
+}
+
+.three{
+    background-color: var(--VeryDarkcyan);
+    color: var(--VeryDarkcyan);
+}
+
+
+.card{
+    padding: 40px;
+}
+
+.card > p{
+    color:var(--backgroundHeadsButs);
+    padding-top: 10px;
+    margin-bottom: 60px;
+}
+.card > h1{
+    font-family: var(--Shoulders);
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--backgroundHeadsButs);
+}
+
+.card > p{
+    font-family: var(--lexeca);
+    /* font-weight: 700; */
+}
+.card >svg{
+    width:64px; 
+    height:40px; 
+}
+
+.card >span {
+    border: 2px solid var(--backgroundHeadsButs);
+    border-radius: 30px;
+    padding: 12px;
+    text-align: center;
+    background-color: var(--backgroundHeadsButs);
+    font-family: var(--Paragraphs);
+}
+
+@media (max-width: 800px){
+    .card-container{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1440px){
+    .card-container{
+        width: 50%;
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
